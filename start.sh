@@ -1,12 +1,12 @@
 if [ -z $UPSTREAM_REPO ]
 then
   echo "Cloning main Repository"
-  git clone https://github.com/jkdevloper01/JK-FILTER-BOT.git /JK-FILTER-BOT
+  git clone https://github.com/rokstar890/rajbharrk.git /rajbharrk
 else
   echo "Cloning Custom Repo from $UPSTREAM_REPO "
-  git clone $UPSTREAM_REPO /JK-FILTER-BOT
+  git clone $UPSTREAM_REPO /rajbharrk
 fi
-cd /JK-FILTER-BOT
+cd /rajbharrk
 pip3 install -U -r requirements.txt
-echo "Starting JK-FILTER-BOT...."
+echo "Starting rajbharrk...."
 python3 bot.py
